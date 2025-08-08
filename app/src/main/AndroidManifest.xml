@@ -4,8 +4,8 @@
         android:allowBackup="true"
         android:label="Scorekeeper"
         android:theme="@style/Theme.Scorekeeper4"
-        android:icon="@android:drawable/ic_menu_help"
-        android:roundIcon="@android:drawable/ic_menu_help">
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
         <activity
             android:name=".MainActivity"
             android:exported="true">
