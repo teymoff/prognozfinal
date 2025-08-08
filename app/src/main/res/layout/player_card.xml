@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameInput"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Имя игрока">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="8dp"
+                android:background="@drawable/score_badge_bg"
+                android:text="0"
+                android:textAppearance="@android:style/TextAppearance.Material.Large"/>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/groupPlus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:singleSelection="false">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPlus5"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:text="+5"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPlus10"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:text="+10"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPlus20"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:text="+20"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPlus40"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:text="+40"/>
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/groupMinus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:singleSelection="false">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMinus10"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:text="-10"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMinus20"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:text="-20"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMinus40"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:text="-40"/>
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
