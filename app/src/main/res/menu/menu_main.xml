@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_reset_points"
+        android:title="Reset Only Points"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/action_reset_all"
+        android:title="Reset ALL"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:showAsAction="always"/>
+</menu>
